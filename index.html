@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML, CSS, JS Runner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+    <h1>AJ CODER</h1>
+
+    <!-- Ad placement -->
+    <div class="ad-container">
+        <a href="https://www.example.com">
+            <img src="https://via.placeholder.com/728x90?text=Your+Ad+Here" alt="Advertisement" class="ad-banner">
+        </a>
+    </div>
+</header>
+
+        <!-- Add this anywhere in your HTML body where you want to display ads -->
+<div class="ad-container">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-xxxxxxxxxx"  <!-- Replace with your AdSense client ID -->
+         </ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+        
+        <main>
+            <div class="tabs">
+                <button class="tab active" onclick="showEditor('html')">HTML</button>
+                <button class="tab" onclick="showEditor('css')">CSS</button>
+                <button class="tab" onclick="showEditor('js')">JavaScript</button>
+            </div>
+
+            <div class="editor-container">
+                <textarea id="htmlCode" class="editor"></textarea>
+                <textarea id="cssCode" class="editor" style="display: none;"></textarea>
+                <textarea id="jsCode" class="editor" style="display: none;"></textarea>
+            </div>
+
+            <button class="run-button" onclick="runCode()">Run Code</button>
+<div class="ad-container">
+    <a href="https://www.example.com">
+        <img src="https://via.placeholder.com/728x90?text=Your+Ad+Here" alt="Advertisement" class="ad-banner">
+    </a>
+</div>
+
+            <div class="output-section">
+                <h2>Output:</h2>
+                <iframe id="output" class="output-frame"></iframe>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
